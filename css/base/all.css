@@ -1,0 +1,296 @@
+/* line 47, D:/wamp/www/SVN/Xipsy/markup/scss/base/markup-mixins */
+.logo img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+/* line 3, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+body {
+  min-width: 320px; }
+
+/* line 6, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+.wrapper {
+  height: 100%;
+  white-space: nowrap; }
+  /* line 149, D:/wamp/www/SVN/Xipsy/markup/scss/base/markup-mixins */
+  .wrapper .form-box {
+    display: inline-block;
+    white-space: normal;
+    vertical-align: middle; }
+  /* line 154, D:/wamp/www/SVN/Xipsy/markup/scss/base/markup-mixins */
+  .wrapper:before {
+    content: '';
+    vertical-align: middle;
+    display: inline-block;
+    height: 100%;
+    width: 1px;
+    overflow: hidden;
+    margin: 0 0 0 -5px; }
+
+/* line 10, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+.logo {
+  display: block;
+  margin: 0 auto 15px;
+  max-width: 202px; }
+  @media only screen and (max-width: 1025px) {
+    .logo {
+      max-width: 182px; } }
+  @media only screen and (max-width: 767px) {
+    .logo {
+      max-width: 142px; } }
+
+@media only screen and (max-width: 1025px) {
+  .login-area #main .headings p {
+    margin-bottom: 2.188em;
+    line-height: 1.313em; } }
+@media only screen and (max-width: 767px) {
+  .login-area #main .headings p {
+    margin-bottom: 1.313em; } }
+/* line 39, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+#main form .input-holder {
+  padding: 0;
+  border: 1px solid #fff; }
+  @media only screen and (max-width: 767px) {
+    #main form .input-holder {
+      margin: 0 0 30px; } }
+  /* line 45, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+  #main form .input-holder label {
+    border-right: 1px solid #fff;
+    text-transform: uppercase;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+    @media only screen and (max-width: 767px) {
+      #main form .input-holder label {
+        font-size: 0.625em; } }
+    /* line 52, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+    #main form .input-holder label .label-text {
+      display: block;
+      text-align: left;
+      padding: 2px 7px; }
+      @media only screen and (max-width: 767px) {
+        #main form .input-holder label .label-text {
+          padding: 4px 9px 3px; } }
+  /* line 61, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+  #main form .input-holder .focus-active {
+    background: #fff;
+    color: #00007b; }
+  @media only screen and (max-width: 1025px) {
+    #main form .input-holder .column {
+      border-bottom: 1px solid #fff; } }
+  @media only screen and (max-width: 1025px) {
+    #main form .input-holder .column.last {
+      border-bottom: 0; } }
+/* line 81, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+#main form .focus-active input[type="text"], #main form .focus-active input[type="password"], #main form .focus-active input[type="email"], #main form .focus-active input[type="search"], #main form .focus-active textarea {
+  background: #fff;
+  color: #00007b; }
+/* line 90, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+#main form input[type="text"], #main form input[type="password"], #main form input[type="email"], #main form input[type="search"], #main form textarea {
+  margin: 0; }
+/* line 97, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+#main form input[type="text"]:focus, #main form input[type="password"]:focus, #main form input[type="email"]:focus, #main form input[type="search"]:focus, #main form textarea:focus {
+  background: none;
+  color: #00007b; }
+/* line 102, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+#main .login-form {
+  padding: 0 59px 0 74px; }
+  @media only screen and (max-width: 1025px) {
+    #main .login-form {
+      padding: 0 0 0 10px; } }
+  @media only screen and (max-width: 767px) {
+    #main .login-form {
+      padding: 0 14px 0 16px; } }
+  /* line 110, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+  #main .login-form input[type="submit"] {
+    background: none;
+    border: 3px solid #fff;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 63px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+    @media only screen and (max-width: 1025px) {
+      #main .login-form input[type="submit"] {
+        width: 135px;
+        height: 52px;
+        margin: 0 auto; } }
+    @media only screen and (max-width: 767px) {
+      #main .login-form input[type="submit"] {
+        font-size: 0.875em; } }
+    /* line 127, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+    #main .login-form input[type="submit"]:hover {
+      background: #fff;
+      color: #00007b; }
+/* line 133, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+#main .invitation-form {
+  padding: 0 24px; }
+  @media only screen and (max-width: 767px) {
+    #main .invitation-form {
+      padding: 0 16px; } }
+  /* line 138, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+  #main .invitation-form button[type="submit"] {
+    width: 103.4%;
+    margin: 0 0 0 4px;
+    display: block;
+    background: none;
+    text-transform: uppercase;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    max-width: 195px;
+    padding: 2px 0;
+    position: relative;
+    position: relative; }
+    /* line 234, D:/wamp/www/SVN/Xipsy/markup/scss/base/markup-mixins */
+    #main .invitation-form button[type="submit"]:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      bottom: auto;
+      left: 0;
+      right: 0; }
+    /* line 234, D:/wamp/www/SVN/Xipsy/markup/scss/base/markup-mixins */
+    #main .invitation-form button[type="submit"]:before {
+      position: absolute;
+      content: "";
+      top: auto;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+    /* line 150, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+    #main .invitation-form button[type="submit"]:after, #main .invitation-form button[type="submit"]:before {
+      height: 2px;
+      background: url(../../images/divider-1.jpg) repeat-x; }
+    /* line 154, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+    #main .invitation-form button[type="submit"] .text {
+      padding: 20px 0;
+      display: block;
+      position: relative;
+      position: relative; }
+      /* line 234, D:/wamp/www/SVN/Xipsy/markup/scss/base/markup-mixins */
+      #main .invitation-form button[type="submit"] .text:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: auto;
+        right: 0; }
+      /* line 234, D:/wamp/www/SVN/Xipsy/markup/scss/base/markup-mixins */
+      #main .invitation-form button[type="submit"] .text:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: auto; }
+      /* line 160, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+      #main .invitation-form button[type="submit"] .text:after, #main .invitation-form button[type="submit"] .text:before {
+        width: 2px;
+        background: url(../../images/divider-2.jpg) repeat-y; }
+      @media only screen and (max-width: 767px) {
+        #main .invitation-form button[type="submit"] .text {
+          padding: 14px 0 15px; } }
+    @media only screen and (max-width: 1025px) {
+      #main .invitation-form button[type="submit"] {
+        margin: 0 auto; } }
+    @media only screen and (max-width: 767px) {
+      #main .invitation-form button[type="submit"] {
+        max-width: 174px;
+        font-size: 0.875em; } }
+    /* line 175, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+    #main .invitation-form button[type="submit"]:hover {
+      background: #fff;
+      color: #00007b; }
+  @media only screen and (max-width: 1025px) {
+    #main .invitation-form .input-holder {
+      margin-bottom: 1.25em; } }
+  @media only screen and (max-width: 767px) {
+    #main .invitation-form .input-holder {
+      margin-bottom: 2.25em; } }
+
+/* line 191, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+.flip-mask {
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-property: preserve-3d;
+  transition-property: preserve-3d;
+  position: relative; }
+  /* line 195, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+  .flip-mask .flip-slide {
+    background: #0a0045;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    -webkit-transition-property: preserve-3d;
+    transition-property: preserve-3d; }
+    /* line 200, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+    .flip-mask .flip-slide.front-side {
+      -webkit-transition: 0.6s;
+      -o-transition: 0.6s;
+      transition: 0.6s;
+      -webkit-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      -o-transform: rotateY(0deg);
+      transform: rotateY(0deg); }
+    /* line 204, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+    .flip-mask .flip-slide.back-side {
+      -webkit-transition: 0.6s;
+      -o-transition: 0.6s;
+      transition: 0.6s;
+      -webkit-transform: rotateY(-180deg);
+      -ms-transform: rotateY(-180deg);
+      -o-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0; }
+  /* line 213, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+  .flip-active .flip-mask {
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    -webkit-transition-property: preserve-3d;
+    transition-property: preserve-3d; }
+    /* line 217, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+    .flip-active .flip-mask .front-side {
+      -webkit-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+      transform: rotateY(180deg); }
+    /* line 220, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+    .flip-active .flip-mask .back-side {
+      -webkit-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      -o-transform: rotateY(0deg);
+      transform: rotateY(0deg); }
+
+/* line 226, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+span.link-request {
+  display: none; }
+  /* line 228, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+  .flip-active span.link-request {
+    display: inline; }
+
+/* line 233, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+.flip-active a.link-request {
+  display: none; }
+
+/* line 238, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+.flip-active span.link-login {
+  display: none; }
+
+/* line 242, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+a.link-login {
+  display: none; }
+  /* line 244, D:/wamp/www/SVN/Xipsy/markup/scss/base/all.scss */
+  .flip-active a.link-login {
+    display: inline; }
+
+/*# sourceMappingURL=all.css.map */

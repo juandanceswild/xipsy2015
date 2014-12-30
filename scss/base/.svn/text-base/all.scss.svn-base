@@ -1,0 +1,247 @@
+@import "variables";
+@import "markup-mixins";
+body {
+	min-width: $base-min-width;
+}
+.wrapper {
+	height: 100%;
+	@include v-align(form-box, middle);
+}
+.logo {
+	display: block;
+	margin: 0 auto 15px;
+	max-width: 202px;
+	img {
+		@extend %img-responsive;
+	}
+	@include breakpoint($tablet){
+		max-width: 182px;
+	}
+	@include breakpoint($mobile){
+		max-width: 142px;
+	}
+}
+#main {
+	.login-area & {
+		.headings {
+			p {
+				@include breakpoint($tablet){
+					margin-bottom: 2.188em;
+					line-height: 1.313em;
+				}
+				@include breakpoint($mobile){
+					margin-bottom: 1.313em;
+				}
+			}
+		}
+	}
+	form {
+		.input-holder {
+			padding: 0;
+			border: 1px solid $white;
+			@include breakpoint($mobile){
+				margin: 0 0 30px;
+			}
+			label {
+				border-right: 1px solid $white;
+				text-transform: uppercase;
+				font-family: $font-family-alt;
+				@include breakpoint($mobile){
+					font-size: 0.625em;
+				}
+				.label-text {
+					display: block;
+					text-align: left;
+					padding: 2px 7px;
+					@include breakpoint($mobile){
+						padding: 4px 9px 3px;
+					}
+				}
+			}
+			.focus-active {
+				background: $white;
+				color: #00007b;
+			}
+			.column{
+				@include breakpoint($tablet){
+					border-bottom: 1px solid $white;
+				}
+				&.last {
+					@include breakpoint($tablet){
+						border-bottom: 0;
+					}
+				}
+			}
+		}
+		.focus-active {
+			input[type="text"],
+			input[type="password"],
+			input[type="email"],
+			input[type="search"],
+			textarea{
+				background: $white;
+				color: $input-color;
+			}
+		}
+		input[type="text"],
+		input[type="password"],
+		input[type="email"],
+		input[type="search"],
+		textarea{
+			margin: 0;
+		}
+		input[type="text"]:focus,
+		input[type="password"]:focus,
+		input[type="email"]:focus,
+		input[type="search"]:focus,
+		textarea:focus{
+			background: none;
+			color: $input-color;
+		}
+	}
+	.login-form {
+		padding: 0 59px 0 74px;
+		@include breakpoint($tablet){
+			padding: 0 0 0 10px;
+		}
+		@include breakpoint($mobile){
+			padding: 0 14px 0 16px;
+		}
+		input[type="submit"]{
+			background: none;
+			border: 3px solid $white;
+			display: block;
+			padding: 0;
+			margin: 0;
+			@include size(100%, 63px);
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			font-family: $font-family-alt;
+			@include breakpoint($tablet){
+				@include size(135px, 52px);
+				margin: 0 auto;
+			}
+			@include breakpoint($mobile){
+				font-size: .875em;
+			}
+			&:hover{
+				background: $white;
+				color: $input-color;
+			}
+		}
+	}
+	.invitation-form {
+		padding: 0 24px;
+		@include breakpoint($mobile){
+			padding: 0 16px;
+		}
+		button[type="submit"]{
+			width: 103.4%;
+			margin: 0 0 0 4px;
+			display: block;
+			background: none;
+			text-transform: uppercase;
+			font-family: $font-family-alt;
+			max-width: 195px;
+			padding: 2px 0;
+			@include element(after, 0, 0, auto, 0);
+			@include element(before, auto, 0, 0, 0);
+			&:after,
+			&:before {
+				height: 2px;
+				background: url(../../images/divider-1.jpg) repeat-x;
+			}
+			.text {
+				padding: 20px 0;
+				display: block;
+				@include element(after, 0, 0, 0, auto);
+				@include element(before, 0, auto, 0, 0);
+				&:after,
+				&:before {
+					width: 2px;
+					background: url(../../images/divider-2.jpg) repeat-y;
+				}
+				@include breakpoint($mobile){
+					padding: 14px 0 15px;
+				}
+			}
+			@include breakpoint($tablet){
+				margin: 0 auto;
+			}
+			@include breakpoint($mobile){
+				max-width: 174px;
+				font-size: 0.875em;
+			}
+			&:hover{
+				background: $white;
+				color: $input-color;
+			}
+		}
+		.input-holder {
+			@include breakpoint($tablet){
+				
+				margin-bottom: 1.250em;
+			}
+			@include breakpoint($mobile){
+				margin-bottom: 2.250em;
+			}
+		}
+	}
+}
+.flip-mask{
+	@include transition-duration( 0.6s);
+	@include transition-property(preserve-3d);
+	position: relative;
+	.flip-slide {
+		background: $main-theme-color;
+		@include hidden-back(hidden);
+		@include transition-duration( 0.6s);
+		@include transition-property(preserve-3d);
+		&.front-side {
+			@include transition(0.6s);
+			@include rotateY(0deg);
+		}
+		&.back-side {
+			@include transition(0.6s);
+			@include rotateY(-180deg);
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+		}
+	}
+	.flip-active &{
+		@include hidden-back(hidden);
+		@include transition-duration( 0.6s);
+		@include transition-property(preserve-3d);
+		.front-side{
+			@include rotateY(180deg);
+		}
+		.back-side{
+			@include rotateY(0deg);
+		}
+	}
+}
+
+span.link-request{
+	display: none;
+	.flip-active &{
+		display: inline;
+	}
+}
+a.link-request{
+	.flip-active &{
+		display: none;
+	}
+}
+span.link-login{
+	.flip-active &{
+		display: none;
+	}
+}
+a.link-login{
+	display: none;
+	.flip-active &{
+		display: inline;
+	}
+}
