@@ -1,14 +1,14 @@
 10
 
 dir
-11335
+12946
 http://svn.w3.ua/Markup/2014/12/Xipsy/markup/images
 http://svn.w3.ua/Markup/2014/12
 
 
 
-2014-12-27T15:02:23.794374Z
-10582
+2015-01-06T12:21:51.250964Z
+12856
 ali.rahat
 
 
@@ -25,40 +25,6 @@ ali.rahat
 
 
 4fd8bfd7-bef1-4712-8a41-de38095ff42f
-
-logo.jpg
-file
-
-
-
-
-2014-12-30T10:33:41.624086Z
-a73540bd0c9547dd87a70eb0b73a1531
-2014-12-27T15:02:23.794374Z
-10582
-ali.rahat
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6904
 
 divider-1.jpg
 file
@@ -127,4 +93,38 @@ has-props
 
 
 335
+
+logo.svg
+file
+
+
+
+
+2015-01-06T14:08:24.963988Z
+0bf20712f08c7612fbf15a64e88ab26b
+2015-01-06T12:21:51.250964Z
+12856
+ali.rahat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1481
 

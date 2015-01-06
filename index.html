@@ -1,84 +1,122 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
+	 <!-- Meta Info -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="######">
+	<meta name="google-site-verification" content="######">
+	<meta name="author" content="######">
+	<meta name="Copyright" content="Copyright ###### 201#. All Rights Reserved.">
+	<meta name="DC.title" content="######">
+	<meta name="DC.subject" content="######">
+	<meta name="DC.creator" content="######">
+	<!-- Facebook -->
+	<meta property="og:title" content="######" />
+	<meta property="og:description" content="######" />
+	<meta property="og:url" content="######" />
+	<meta property="og:image" content="######">
+	<meta property="og:image:type" content="######">
+	<meta property="og:image:width" content="######">
+	<meta property="og:image:height" content="######">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- title of the site -->
 	<title>Xipsy</title>
+	<!-- include the site stylesheet form Zurb -->
 	<link href="css/app.css" type="text/css" rel="stylesheet" media="all">
+	<!-- include the site stylesheet -->
 	<link href="css/base/all.css" type="text/css" rel="stylesheet" media="all">
 </head>
 <body>
+	<!-- Main wrapper fo site -->
 	<div class="wrapper login-area text-center">
+		<!-- Main block -->
 		<main id="main" role="main" class="form-box row">
+			<!-- headings area -->
 			<header class="headings clearfix">
 				<div class="holder small-12 medium-6 medium-push-3 large-4 large-push-4 column">
-
-					<strong class="logo"><a href="#"><img src="images/logo.jpg" alt="Xipsy BETA"></a></strong>
-					<p>A few words about the site. <br>Please <span class="link-login">login</span><a class="link-login flip-opener" href="#">login</a> or <span class="link-request">request an invitation.</span><a class="link-request flip-opener" href="#">request an invitation.</a></p>
-					
+					<!-- logo -->
+					<strong class="logo">
+						<a href="#">
+							<img src="images/logo.svg" alt="Xipsy BETA">
+							<span class="text-beta">Beta</span>
+						</a>
+					</strong>
+					<p>A few words about the site. <br>Please <span class="link-login">login</span><a class="link-login flip-opener" href="#">login</a> or <span class="link-request">request an invitation.</span> <a class="link-request flip-opener" href="#">request an invitation.</a></p>
 				</div>
 			</header>
+			<!-- Flip area -->
 			<div class="flip-mask">
-				<div class="clearfix flip-slide front-side">
-					<div class="small-12 medium-10 medium-push-1 large-8 large-push-2 column form-box">
-						<form action="#" class="login-form clearfix">
-							<div class="small-12 medium-9 large-9 column input-holder">
-								<div class="small-12 medium-6 large-6 column">
-									<label class="row form-label" for="userid">
-										<span class="label-text">Xipsy user id</span>
-										<input type="text" id="userid">
-									</label>
+				<div class="flipper">
+					<!-- Flip front area -->
+					<div class="clearfix flip-slide front-side">
+						<div class="small-12 medium-10 medium-push-1 large-8 large-push-2 column form-box">
+							<form action="#" class="login-form clearfix">
+								<div class="small-12 medium-9 large-9 column input-holder">
+									<div class="small-12 medium-6 large-6 column">
+										<label class="row form-label" for="userid">
+											<span class="label-text">Xipsy user id</span>
+											<input type="text" id="userid">
+										</label>
+									</div>
+									<div class="small-12 medium-6  large-6 column last">
+										<label class="row form-label" for="password">
+											<span class="label-text text-uppercase">password</span>
+											<input type="password" id="password">
+										</label>
+									</div>
 								</div>
-								<div class="small-12 medium-6  large-6 column last">
-									<label class="row form-label" for="password">
-										<span class="label-text text-uppercase">password</span>
-										<input type="password" id="password">
-									</label>
+								<div class="small-12 medium-3 large-3 column">
+									<input type="submit" class="button" value="login">
 								</div>
-							</div>
-							<div class="small-12 medium-3 large-3 column">
-								<input type="submit" class="button" value="login">
-							</div>
-						</form>
+							</form>
+						</div>
 					</div>
-				</div>
-				<div class="clearfix flip-slide back-side">
-					<div class="small-12 medium-10 medium-push-1 large-10 large-push-1 column form-box">
-						<form action="#" class="invitation-form clearfix">
-							<div class="small-12 medium-8 medium-push-2 large-9 large-push-0 column input-holder">
-								<div class="small-12 medium-6  large-3 column">
-									<label class="row form-label" for="firstname">
-										<span class="label-text">First Name</span>
-										<input type="text" id="firstname">
-									</label>
+					<!-- Flip back area -->
+					<div class="clearfix flip-slide back-side">
+						<div class="small-12 medium-10 medium-push-1 large-10 large-push-1 column form-box">
+							<form action="#" class="invitation-form clearfix">
+								<div class="small-12 medium-8 medium-push-2 large-9 large-push-0 column input-holder">
+									<div class="small-12 medium-6  large-3 column">
+										<label class="row form-label" for="firstname">
+											<span class="label-text">First Name</span>
+											<input type="text" id="firstname">
+										</label>
+									</div>
+									<div class="small-12 medium-6 large-3 column">
+										<label class="row form-label" for="lastname">
+											<span class="label-text">Last Name</span>
+											<input type="text" id="lastname">
+										</label>
+									</div>
+									<div class="small-12 medium-12 large-6 column last">
+										<label class="row form-label" for="email">
+											<span class="label-text text-uppercase">email address</span>
+											<input type="email" required id="email">
+										</label>
+									</div>
 								</div>
-								<div class="small-12 medium-6 large-3 column">
-									<label class="row form-label" for="lastname">
-										<span class="label-text">Last Name</span>
-										<input type="text" id="lastname">
-									</label>
+								<div class="small-12 medium-12 large-3 column">
+									<button type="submit"><span class="text">request invite</span></button>
 								</div>
-								<div class="small-12 medium-12 large-6 column last">
-									<label class="row form-label" for="email">
-										<span class="label-text text-uppercase">email address</span>
-										<input type="email" id="email">
-									</label>
-								</div>
-							</div>
-							<div class="small-12 medium-12 large-3 column">
-								<button type="submit"><span class="text">request invite</span></button>
-							</div>
-						</form>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
 		</main>
 	</div>
+	<!-- includes bower the Javascript Library -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<!-- includes foundation the Javascript Library -->
 	<script src="bower_components/foundation/js/foundation.min.js"></script>
+	<!-- includes foundation the Javascript -->
 	<script src="js/app.js"></script>
 	<script src="bower_components/modernizr/modernizr.js"></script>
+	<!-- includes the Javascript Library -->
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<!-- includes custom Javascript -->
 	<script type="text/javascript" src="js/jquery.main.js"></script>
 </body>
 </html>

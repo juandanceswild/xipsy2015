@@ -1,16 +1,35 @@
+/*  ---------------------------------------------------------
+	1. Include files
+	2. General reset
+	---------------------------------------------------------*/
+/*  ---------------------------------------------------------
+	1. Include files
+	---------------------------------------------------------*/
+
 @import "variables";
 @import "markup-mixins";
-body {
-	min-width: $base-min-width;
-}
+/*  ---------------------------------------------------------
+	2. General reset
+	---------------------------------------------------------*/
+/* body styles */
+input[type="search"] {-webkit-appearance: none;}
+input[type="search"]::-webkit-search-cancel-button {-webkit-appearance: none;}
+input[type="search"]::-webkit-search-decoration {display:none;}
+input[type="email"] {-webkit-appearance: none;}
+input[type="email"]::-webkit-search-cancel-button {-webkit-appearance: none;}
+input[type="email"]::-webkit-search-decoration {display:none;}
+body { min-width: $base-min-width; }
+/* wrapper styles */
 .wrapper {
 	height: 100%;
 	@include v-align(form-box, middle);
 }
+/* logo styles */
 .logo {
 	display: block;
 	margin: 0 auto 15px;
 	max-width: 202px;
+	position: relative;
 	img {
 		@extend %img-responsive;
 	}
@@ -20,9 +39,21 @@ body {
 	@include breakpoint($mobile){
 		max-width: 142px;
 	}
+	.text-beta {
+		text-transform: uppercase;
+		position: absolute;
+		right:0;
+		bottom: 100%;
+		color: $white;
+		font: #{12px}/#{15px} $font-family-alt;
+		margin: 0 7px -1px 0;
+	}
 }
+/* Main part of the site */
 #main {
+	padding: 15px 0;
 	.login-area & {
+		/* Main headings styels */
 		.headings {
 			p {
 				@include breakpoint($tablet){
@@ -35,6 +66,7 @@ body {
 			}
 		}
 	}
+	/* default form styles */
 	form {
 		.input-holder {
 			padding: 0;
@@ -46,13 +78,15 @@ body {
 				border-right: 1px solid $white;
 				text-transform: uppercase;
 				font-family: $font-family-alt;
+				font-weight: bold;
+				&.focus-active { font-weight: normal; }
 				@include breakpoint($mobile){
 					font-size: 0.625em;
 				}
 				.label-text {
 					display: block;
 					text-align: left;
-					padding: 2px 7px;
+					padding: 3px 7px 2px;
 					@include breakpoint($mobile){
 						padding: 4px 9px 3px;
 					}
@@ -81,6 +115,7 @@ body {
 			textarea{
 				background: $white;
 				color: $input-color;
+				-webkit-appearance: none;
 			}
 		}
 		input[type="text"],
@@ -89,6 +124,10 @@ body {
 		input[type="search"],
 		textarea{
 			margin: 0;
+			background: $main-theme-color;
+			text-decoration: none;
+			box-shadow: none;
+			outline: 0;
 		}
 		input[type="text"]:focus,
 		input[type="password"]:focus,
@@ -97,8 +136,10 @@ body {
 		textarea:focus{
 			background: none;
 			color: $input-color;
+			background: $white;
 		}
 	}
+	/* login form styles */
 	.login-form {
 		padding: 0 59px 0 74px;
 		@include breakpoint($tablet){
@@ -113,12 +154,12 @@ body {
 			display: block;
 			padding: 0;
 			margin: 0;
-			@include size(100%, 63px);
+			@include size(100%, 64px);
 			letter-spacing: 1px;
 			text-transform: uppercase;
 			font-family: $font-family-alt;
 			@include breakpoint($tablet){
-				@include size(135px, 52px);
+				width: 135px;
 				margin: 0 auto;
 			}
 			@include breakpoint($mobile){
@@ -129,14 +170,24 @@ body {
 				color: $input-color;
 			}
 		}
+		.input-holder {
+			.column {
+				@include breakpoint($tablet){ border: 0; }
+				@include breakpoint($mobile-small){
+					border-bottom: 1px solid $white;
+				}
+			}
+		}
 	}
+	/* invitation form styles */
 	.invitation-form {
 		padding: 0 24px;
 		@include breakpoint($mobile){
 			padding: 0 16px;
 		}
 		button[type="submit"]{
-			width: 103.4%;
+			@include size (103.4%, 64px);
+			border: 3px solid $white;
 			margin: 0 0 0 4px;
 			display: block;
 			background: none;
@@ -144,26 +195,8 @@ body {
 			font-family: $font-family-alt;
 			max-width: 195px;
 			padding: 2px 0;
-			@include element(after, 0, 0, auto, 0);
-			@include element(before, auto, 0, 0, 0);
-			&:after,
-			&:before {
-				height: 2px;
-				background: url(../../images/divider-1.jpg) repeat-x;
-			}
 			.text {
-				padding: 20px 0;
 				display: block;
-				@include element(after, 0, 0, 0, auto);
-				@include element(before, 0, auto, 0, 0);
-				&:after,
-				&:before {
-					width: 2px;
-					background: url(../../images/divider-2.jpg) repeat-y;
-				}
-				@include breakpoint($mobile){
-					padding: 14px 0 15px;
-				}
 			}
 			@include breakpoint($tablet){
 				margin: 0 auto;
@@ -171,6 +204,7 @@ body {
 			@include breakpoint($mobile){
 				max-width: 174px;
 				font-size: 0.875em;
+				height:47px;
 			}
 			&:hover{
 				background: $white;
@@ -179,7 +213,6 @@ body {
 		}
 		.input-holder {
 			@include breakpoint($tablet){
-				
 				margin-bottom: 1.250em;
 			}
 			@include breakpoint($mobile){
@@ -188,32 +221,35 @@ body {
 		}
 	}
 }
+/* styles for flip animation */
 .flip-mask{
-	@include transition-duration( 0.6s);
-	@include transition-property(preserve-3d);
 	position: relative;
+	@include transform-style(preserve-3d);
+	@include transform(perspective(1000));
+	@include transform(perspective(1000px));
 	.flip-slide {
-		background: $main-theme-color;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		@include rotateY(0deg);
 		@include hidden-back(hidden);
-		@include transition-duration( 0.6s);
-		@include transition-property(preserve-3d);
+		@include transition(0.6s);
+		@include transform-style(preserve-3d);
+		/* flip front styles */
 		&.front-side {
-			@include transition(0.6s);
+			background: $main-theme-color;
 			@include rotateY(0deg);
+			z-index: 2;
 		}
+		/* flip back styles */
 		&.back-side {
-			@include transition(0.6s);
+			color:#666;
 			@include rotateY(-180deg);
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
 		}
 	}
 	.flip-active &{
-		@include hidden-back(hidden);
-		@include transition-duration( 0.6s);
-		@include transition-property(preserve-3d);
 		.front-side{
 			@include rotateY(180deg);
 		}
@@ -221,8 +257,22 @@ body {
 			@include rotateY(0deg);
 		}
 	}
+	.flipper {
+		@include transform-style(preserve-3d);
+		@include perspective(perspective(1000px));
+		@include transition(0.6s);
+		position: relative;
+		overflow: hidden;
+		min-height: 65px;
+		@include breakpoint($tablet){
+			min-height: 210px;
+		}
+		@include breakpoint($mobile){
+			min-height: 270px;
+		}
+	}
 }
-
+/* login link styles */
 span.link-request{
 	display: none;
 	.flip-active &{
@@ -230,6 +280,19 @@ span.link-request{
 	}
 }
 a.link-request{
+	position: relative;
+	text-decoration: none;
+	overflow: hidden;
+	@include element(after, auto, 0, 0, 0);
+	&:after {
+		height: 1px;
+		background: $white;
+	}
+	&:hover {
+		&:after {
+			background: none;
+		}
+	}
 	.flip-active &{
 		display: none;
 	}
@@ -241,6 +304,17 @@ span.link-login{
 }
 a.link-login{
 	display: none;
+	text-decoration: none;
+	@include element(after, auto, 0, 0, 0);
+	&:after {
+		height: 1px;
+		background: $white;
+	}
+	&:hover {
+		&:after {
+			background: none;
+		}
+	}
 	.flip-active &{
 		display: inline;
 	}

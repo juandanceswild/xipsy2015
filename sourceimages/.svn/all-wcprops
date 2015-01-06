@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/Markup/2014/12/!svn/ver/10582/Xipsy/markup/sourceimages
+/Markup/2014/12/!svn/ver/12825/Xipsy/markup/sourceimages
 END
 logo.jpg
 K 25
@@ -26,4 +26,10 @@ K 25
 svn:wc:ra_dav:version-url
 V 65
 /Markup/2014/12/!svn/ver/10582/Xipsy/markup/sourceimages/info.txt
+END
+logo.svg
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/Markup/2014/12/!svn/ver/12825/Xipsy/markup/sourceimages/logo.svg
 END

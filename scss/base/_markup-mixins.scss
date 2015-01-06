@@ -36,6 +36,12 @@ $retina-hd: 2.5; // hd retina > 2.5x
   }
 }
 
+// Top Align
+@mixin aligned($align){
+	display: inline-block;
+	vertical-align: $align;
+}
+
 // reset for list
 %listreset {
   margin: 0;
@@ -202,6 +208,8 @@ $retina-hd: 2.5; // hd retina > 2.5x
 
 @mixin transition($transition...) {
   -webkit-transition: $transition;
+     -moz-transition: $transition;
+      -ms-transition: $transition;
        -o-transition: $transition;
           transition: $transition;
 }
@@ -226,6 +234,25 @@ $retina-hd: 2.5; // hd retina > 2.5x
      -moz-transition: -moz-transform $transition;
        -o-transition: -o-transform $transition;
           transition: transform $transition;
+} 
+@mixin transform-style($transition) {
+  -webkit-transform-style: $transition;
+     -moz-transform-style: $transition;
+       -o-transform-style: $transition;
+          transform-style: $transition;
+} 
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+     -moz-transform: $transform;
+       -o-transform: $transform;
+          transform: $transform;
+} 
+@mixin perspective($perspective) {
+  -webkit-perspective: -webkit-transform $perspective;
+     -moz-perspective: -moz-transform $perspective;
+       -o-perspective: -o-transform $perspective;
+          perspective: transform $perspective;
 }
 
 // reset for after and before
