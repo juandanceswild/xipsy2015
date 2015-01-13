@@ -5833,6 +5833,19 @@ th.hide-for-touch {
 	display: table-cell !important;
 }
 
+
+#success {
+	background-color: #0a0045;
+	font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+	border-style: solid;
+	border-color: #fff;
+	box-shadow: none;
+	color: #fff;
+	margin-top: 24px;
+	margin-left: 11.3%;
+	font-size: 1rem;
+	width: 75.1% !important;
+}
 /* Print visibility */
 
 @media only screen {
@@ -8192,6 +8205,8 @@ th.hide-for-touch {
 	td.show-for-xxlarge-down {
 		display: table-cell !important;
 	}
+
+	
 }
 
 @media only screen and (min-width:40.063em) and (max-width:64em) {
@@ -10000,4 +10015,4 @@ th.hide-for-touch {
 		transform: rotate(360deg);
 	}
 }
-
+

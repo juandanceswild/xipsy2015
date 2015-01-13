@@ -1,4 +1,4 @@
-<!doctype html>
+	<!doctype html>
 <html class="no-js" lang="en">
 <head>
 	 <!-- Meta Info -->
@@ -76,24 +76,24 @@
 					<!-- Flip back area -->
 					<div class="clearfix flip-slide back-side">
 						<div class="small-12 medium-10 medium-push-1 large-10 large-push-1 column form-box">
-							<form action="#" class="invitation-form clearfix">
+						    <form action="//xipsy.us9.list-manage.com/subscribe/post?u=b16562ee3dbb6ff87e2f176c3&amp;id=f1d785ccd4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate invitation-form clearfix" target="_blank" novalidate>
 								<div class="small-12 medium-8 medium-push-2 large-9 large-push-0 column input-holder">
 									<div class="small-12 medium-6  large-3 column">
 										<label class="row form-label" for="firstname">
 											<span class="label-text">First Name</span>
-											<input type="text" id="firstname">
+											<input type="text" name="FNAME" id="firstname">
 										</label>
 									</div>
 									<div class="small-12 medium-6 large-3 column">
 										<label class="row form-label" for="lastname">
 											<span class="label-text">Last Name</span>
-											<input type="text" id="lastname">
+											<input type="text" name="LNAME" id="lastname">
 										</label>
 									</div>
 									<div class="small-12 medium-12 large-6 column last">
 										<label class="row form-label" for="email">
 											<span class="label-text text-uppercase">email address</span>
-											<input type="email" required id="email">
+											<input type="email" name="EMAIL" required id="email">
 										</label>
 									</div>
 								</div>
@@ -103,10 +103,14 @@
 							</form>
 						</div>
 					</div>
+
 				</div>
 			</div>
+			<div id="success" style="display: none;">Register Success...</div>
 		</main>
 	</div>
+	<!-- includes api mailchimp -->
+	<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 	<!-- includes bower the Javascript Library -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<!-- includes foundation the Javascript Library -->

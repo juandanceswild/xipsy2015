@@ -103,7 +103,11 @@ body {
         font-weight: normal; }
       @media only screen and (max-width: 767px) {
         #main form .input-holder label {
-          font-size: 0.625em; } }
+          font-size: 0.625em; }
+          #success {
+            width: 67% !important;
+            margin: 20px auto;
+          } }
       #main form .input-holder label .label-text {
         display: block;
         text-align: left;

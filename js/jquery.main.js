@@ -174,3 +174,22 @@ function initFocusClass() {
 		});
 	};
 }(jQuery));
+
+$(function() {
+    $('.invitation-form').submit(function() {
+        // show a hidden div to indicate progression
+        $('#success').show();
+
+        // kick off AJAX
+        $.ajax({
+            url: this.action,
+            type: this.method,
+            data: $(this).serialize(),
+            success: function() {
+                // AJAX request finished, handle the results and hide progress
+                $('#success').hide();
+            }
+        });
+        return false;
+    });
+});
