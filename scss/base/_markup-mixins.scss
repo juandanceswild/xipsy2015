@@ -267,3 +267,13 @@ $retina-hd: 2.5; // hd retina > 2.5x
 	right:$right;
 	}
 }
+
+// reset for after and before
+@mixin element-reset( $top, $right, $bottom, $left){
+	position: absolute;
+	content: "";
+	top:$top;
+	bottom:$bottom;
+	left:$left;
+	right:$right;
+}

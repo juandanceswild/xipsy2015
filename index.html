@@ -38,12 +38,16 @@
 				<div class="holder small-12 medium-6 medium-push-3 large-4 large-push-4 column">
 					<!-- logo -->
 					<strong class="logo">
-						<a href="#">
+						<a class="lightbox" href="#popup1">
 							<img src="images/logo.svg" alt="Xipsy BETA">
 							<span class="text-beta">Beta</span>
 						</a>
 					</strong>
-					<p>A few words about the site. <br>Please <span class="link-login">login</span><a class="link-login flip-opener" href="#">login</a> or <span class="link-request">request an invitation.</span> <a class="link-request flip-opener" href="#">request an invitation.</a></p>
+					<p id="hidden-msg">A few words about the site. <br>Please <span class="link-login">login</span><a class="link-login flip-opener" href="#">login</a> or <span class="link-request">request an invitation.</span> <a class="link-request flip-opener" href="#">request an invitation.</a></p>
+					<div id="thankyou-msg" class="frame row" style="display:none;">
+						<h1>Thank you for your interest in xipsy</h1>
+						<p>An email confirmation has been sent. <br>Please click the link to activate your account. </p>
+					</div>
 				</div>
 			</header>
 			<!-- Flip area -->
@@ -52,48 +56,58 @@
 					<!-- Flip front area -->
 					<div class="clearfix flip-slide front-side">
 						<div class="small-12 medium-10 medium-push-1 large-8 large-push-2 column form-box">
-							<form action="#" class="login-form clearfix">
+							<form action="#" class="login-form clearfix validate-form" method="post">
 								<div class="small-12 medium-9 large-9 column input-holder">
-									<div class="small-12 medium-6 large-6 column">
+									<div class="small-12 medium-6 large-6 column valid-row">
 										<label class="row form-label" for="userid">
 											<span class="label-text">Xipsy user id</span>
-											<input type="text" id="userid">
+											<input class="required" type="text" id="userid">
 										</label>
 									</div>
-									<div class="small-12 medium-6  large-6 column last">
+									<div class="small-12 medium-6  large-6 column last valid-row">
 										<label class="row form-label" for="password">
 											<span class="label-text text-uppercase">password</span>
-											<input type="password" id="password">
+											<input class="required" type="password" id="password">
 										</label>
 									</div>
 								</div>
 								<div class="small-12 medium-3 large-3 column">
 									<input type="submit" class="button" value="login">
 								</div>
+								<div class="row text-left clearfix">
+									<div class="small-12 medium-12 large-12 column">
+										<label class="label-check" for="check">
+											<input id="check" type="checkbox">
+											<span class="custom-check"></span>
+											<span class="check-text">Remember me</span>
+										</label>
+									</div>
+								</div>
+								
 							</form>
 						</div>
 					</div>
 					<!-- Flip back area -->
 					<div class="clearfix flip-slide back-side">
 						<div class="small-12 medium-10 medium-push-1 large-10 large-push-1 column form-box">
-							<form action="#" class="invitation-form clearfix">
+							<form action="#" class="invitation-form clearfix validate-form" method="post">
 								<div class="small-12 medium-8 medium-push-2 large-9 large-push-0 column input-holder">
-									<div class="small-12 medium-6  large-3 column">
+									<div class="small-12 medium-6 large-3 column valid-row">
 										<label class="row form-label" for="firstname">
 											<span class="label-text">First Name</span>
-											<input type="text" id="firstname">
+											<input class="required" type="text" id="firstname">
 										</label>
 									</div>
-									<div class="small-12 medium-6 large-3 column">
+									<div class="small-12 medium-6 large-3 column valid-row">
 										<label class="row form-label" for="lastname">
 											<span class="label-text">Last Name</span>
-											<input type="text" id="lastname">
+											<input class="required" type="text" id="lastname">
 										</label>
 									</div>
-									<div class="small-12 medium-12 large-6 column last">
+									<div class="small-12 medium-12 large-6 column last valid-row">
 										<label class="row form-label" for="email">
 											<span class="label-text text-uppercase">email address</span>
-											<input type="email" required id="email">
+											<input class="required-email" type="email" required id="email">
 										</label>
 									</div>
 								</div>
@@ -106,6 +120,15 @@
 				</div>
 			</div>
 		</main>
+	</div>
+	<div class="popup-holder">
+		<div id="popup1" class="lightbox popup">
+			<div class="popup-content">
+				<h2>There has been an Error &hellip;</h2>
+				<p>It seems a request had already been sent.Please click the below to resend.</p>
+				<a class="btn btn-send" href="#">resend</a>
+			</div>
+		</div>
 	</div>
 	<!-- includes bower the Javascript Library -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>

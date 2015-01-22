@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 50
-/Markup/2014/12/!svn/ver/12856/Xipsy/markup/images
+/Markup/2014/12/!svn/ver/16717/Xipsy/markup/images
 END
 divider-1.jpg
 K 25
@@ -14,6 +14,18 @@ K 25
 svn:wc:ra_dav:version-url
 V 64
 /Markup/2014/12/!svn/ver/10582/Xipsy/markup/images/divider-2.jpg
+END
+bg-node.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/Markup/2014/12/!svn/ver/16717/Xipsy/markup/images/bg-node.jpg
+END
+bg-popup.png
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/Markup/2014/12/!svn/ver/16717/Xipsy/markup/images/bg-popup.png
 END
 logo.svg
 K 25

@@ -330,8 +330,8 @@ select {
 }
 
 .alert-box.alert {
-	background-color: #f04124;
-	border-color: #de2d0f;
+	background-color: #f13300;
+	border-color: #cf2c00;
 	color: #fff;
 }
 
@@ -549,8 +549,8 @@ button.success:focus,
 
 button.alert,
 .button.alert {
-	background-color: #f04124;
-	border-color: #cf2a0e;
+	background-color: #f13300;
+	border-color: #c12900;
 	color: #fff;
 }
 
@@ -558,7 +558,7 @@ button.alert:hover,
 button.alert:focus,
 .button.alert:hover,
 .button.alert:focus {
-	background-color: #cf2a0e;
+	background-color: #c12900;
 }
 
 button.alert:hover,
@@ -805,8 +805,8 @@ button.disabled.alert,
 button[disabled].alert,
 .button.disabled.alert,
 .button[disabled].alert {
-	background-color: #f04124;
-	border-color: #cf2a0e;
+	background-color: #f13300;
+	border-color: #c12900;
 	color: #fff;
 	cursor: default;
 	opacity: .7;
@@ -821,7 +821,7 @@ button[disabled].alert:focus,
 .button.disabled.alert:focus,
 .button[disabled].alert:hover,
 .button[disabled].alert:focus {
-	background-color: #cf2a0e;
+	background-color: #c12900;
 }
 
 button.disabled.alert:hover,
@@ -843,7 +843,7 @@ button[disabled].alert:focus,
 .button.disabled.alert:focus,
 .button[disabled].alert:hover,
 .button[disabled].alert:focus {
-	background-color: #f04124;
+	background-color: #f13300;
 }
 
 button.disabled.warning,
@@ -2423,7 +2423,7 @@ fieldset legend {
 	font-size: .75rem;
 	font-weight: normal;
 	font-style: italic;
-	background: #f04124;
+	background: #f13300;
 	color: #fff;
 }
 
@@ -2441,7 +2441,7 @@ small.error {
 	font-size: .75rem;
 	font-weight: normal;
 	font-style: italic;
-	background: #f04124;
+	background: #f13300;
 	color: #fff;
 }
 
@@ -2458,7 +2458,7 @@ small.error {
 
 .error label,
 .error label.error {
-	color: #f04124;
+	color: #f13300;
 }
 
 .error small.error {
@@ -2469,7 +2469,7 @@ small.error {
 	font-size: .75rem;
 	font-weight: normal;
 	font-style: italic;
-	background: #f04124;
+	background: #f13300;
 	color: #fff;
 }
 
@@ -2495,7 +2495,7 @@ select.error {
 }
 
 label.error {
-	color: #f04124;
+	color: #f13300;
 }
 
 .icon-bar {
@@ -2884,7 +2884,7 @@ kbd {
 }
 
 .label.alert {
-	background-color: #f04124;
+	background-color: #f13300;
 	color: #fff;
 }
 
@@ -3477,7 +3477,7 @@ ul.pagination li {
 }
 
 .progress.alert .meter {
-	background: #f04124;
+	background: #f13300;
 	height: 100%;
 	display: block;
 }
@@ -4646,14 +4646,14 @@ meta.foundation-mq-topbar {
 }
 
 .top-bar-section ul li > a.button.alert {
-	background-color: #f04124;
-	border-color: #cf2a0e;
+	background-color: #f13300;
+	border-color: #c12900;
 	color: #fff;
 }
 
 .top-bar-section ul li > a.button.alert:hover,
 .top-bar-section ul li > a.button.alert:focus {
-	background-color: #cf2a0e;
+	background-color: #c12900;
 }
 
 .top-bar-section ul li > a.button.alert:hover,
@@ -4729,14 +4729,14 @@ meta.foundation-mq-topbar {
 }
 
 .top-bar-section ul li > button.alert {
-	background-color: #f04124;
-	border-color: #cf2a0e;
+	background-color: #f13300;
+	border-color: #c12900;
 	color: #fff;
 }
 
 .top-bar-section ul li > button.alert:hover,
 .top-bar-section ul li > button.alert:focus {
-	background-color: #cf2a0e;
+	background-color: #c12900;
 }
 
 .top-bar-section ul li > button.alert:hover,
@@ -4975,10 +4975,10 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 	font-weight: normal;
 	font-style: normal;
-	color: #222;
+	color: #fff;
 	text-rendering: optimizeLegibility;
 	margin-top: .2rem;
 	margin-bottom: .5rem;
@@ -4992,12 +4992,12 @@ h4 small,
 h5 small,
 h6 small {
 	font-size: 60%;
-	color: #6f6f6f;
+	color: white;
 	line-height: 0;
 }
 
 h1 {
-	font-size: 2.125rem;
+	font-size: .375rem;
 }
 
 h2 {
@@ -5022,7 +5022,7 @@ h6 {
 
 .subheader {
 	line-height: 1.4;
-	color: #6f6f6f;
+	color: white;
 	font-weight: normal;
 	margin-top: .2rem;
 	margin-bottom: .5rem;
@@ -5178,7 +5178,7 @@ blockquote {
 blockquote cite {
 	display: block;
 	font-size: .8125rem;
-	color: #555;
+	color: white;
 }
 
 blockquote cite:before {
@@ -5187,13 +5187,13 @@ blockquote cite:before {
 
 blockquote cite a,
 blockquote cite a:visited {
-	color: #555;
+	color: white;
 }
 
 blockquote,
 blockquote p {
 	line-height: 1.6;
-	color: #6f6f6f;
+	color: white;
 }
 
 /* Microformats */
@@ -7907,7 +7907,7 @@ th.hide-for-touch {
 	}
 
 	h1 {
-		font-size: 2.75rem;
+		font-size: 1rem;
 	}
 
 	h2 {

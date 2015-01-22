@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/Markup/2014/12/!svn/ver/12825/Xipsy/markup/sourceimages
+/Markup/2014/12/!svn/ver/16717/Xipsy/markup/sourceimages
 END
 logo.jpg
 K 25
@@ -26,6 +26,18 @@ K 25
 svn:wc:ra_dav:version-url
 V 65
 /Markup/2014/12/!svn/ver/10582/Xipsy/markup/sourceimages/info.txt
+END
+bg-node.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/Markup/2014/12/!svn/ver/16717/Xipsy/markup/sourceimages/bg-node.jpg
+END
+bg-popup.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/Markup/2014/12/!svn/ver/16717/Xipsy/markup/sourceimages/bg-popup.png
 END
 logo.svg
 K 25

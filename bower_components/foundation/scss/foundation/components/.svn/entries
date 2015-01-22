@@ -1,7 +1,7 @@
 10
 
 dir
-12946
+16788
 http://svn.w3.ua/Markup/2014/12/Xipsy/markup/bower_components/foundation/scss/foundation/components
 http://svn.w3.ua/Markup/2014/12
 
@@ -468,6 +468,40 @@ ali.rahat
 
 20126
 
+_tabs.scss
+file
+
+
+
+
+2014-12-30T10:33:35.448469Z
+7cbde2d3a8201f5a26fdcedfbceed869
+2014-12-27T15:02:23.794374Z
+10582
+ali.rahat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3309
+
 _switches.scss
 file
 
@@ -535,40 +569,6 @@ ali.rahat
 
 
 4712
-
-_tabs.scss
-file
-
-
-
-
-2014-12-30T10:33:35.448469Z
-7cbde2d3a8201f5a26fdcedfbceed869
-2014-12-27T15:02:23.794374Z
-10582
-ali.rahat
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3309
 
 _icon-bar.scss
 file
